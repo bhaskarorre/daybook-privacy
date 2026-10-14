@@ -1,0 +1,160 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daybook - Privacy Policy</title>
+<meta name="description" content="What Daybook records, where it is stored, and what it never does.">
+<style>
+  :root {
+    --bg: #ffffff; --text: #1f2328; --muted: #59636e; --line: #d1d9e0;
+    --soft: #f6f8fa; --link: #1d4ed8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117; --text: #e6edf3; --muted: #9198a1; --line: #30363d;
+      --soft: #161b22; --link: #6ea8fe;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 .25em; }
+  h2 { font-size: 1.3rem; margin: 2em 0 .6em; padding-bottom: .3em; border-bottom: 1px solid var(--line); }
+  a { color: var(--link); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; display: block; overflow-x: auto; }
+  th, td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; }
+  tr:nth-child(even) td { background: var(--soft); }
+  code { background: var(--soft); border: 1px solid var(--line); border-radius: 6px; padding: .1em .35em; font-size: .9em; }
+  pre { background: var(--soft); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; overflow-x: auto; }
+  pre code { border: 0; padding: 0; background: none; }
+  li { margin: .25em 0; }
+  .anchor, .octicon { display: none; }
+</style>
+</head>
+<body>
+<main>
+<h1>Daybook ΓÇö Privacy Policy</h1>
+<p><strong>Last updated: 14 October 2026</strong></p>
+<p>Daybook is a screen-time and focus app for Windows. This policy explains exactly what it<br>
+records, where that goes, and what it never does.</p>
+<p>It is short because there is not much to say. Daybook has no account, no server and no<br>
+telemetry. Nothing it records leaves your PC.</p>
+<hr>
+<h2>The short version</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data sent to us</td>
+<td><strong>None.</strong> There is no server to send it to.</td>
+</tr>
+<tr>
+<td>Accounts</td>
+<td><strong>None.</strong> You never create one or sign in.</td>
+</tr>
+<tr>
+<td>Telemetry, analytics, crash reporting</td>
+<td><strong>None.</strong></td>
+</tr>
+<tr>
+<td>Advertising, tracking, profiling</td>
+<td><strong>None.</strong> Your data is never sold, shared or used for advertising.</td>
+</tr>
+<tr>
+<td>Third-party services</td>
+<td><strong>None</strong>, except Microsoft's own Store service, which Daybook asks for your trial and purchase status, and which handles the purchase.</td>
+</tr>
+<tr>
+<td>Where your data lives</td>
+<td>One folder on your PC: <code class="notranslate">%LOCALAPPDATA%\Daybook</code></td>
+</tr>
+<tr>
+<td>Uninstalling</td>
+<td>Removes that folder and everything in it.</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<hr>
+<h2>What Daybook records</h2>
+<p>To tell you where your time went, Daybook records the following <strong>on your own computer</strong>:</p>
+<ul>
+<li><strong>The application in the foreground</strong> ΓÇö its process name, its file path, and the name<br>
+Windows reports for it (for example "Google Chrome").</li>
+<li><strong>The window title</strong> of that application.</li>
+<li><strong>The website host</strong> you are on, when the foreground window is a browser ΓÇö the host only<br>
+(<code class="notranslate">github.com</code>), never the full address, never page contents, never form data.</li>
+<li><strong>When you were away</strong> ΓÇö periods with no keyboard or mouse input, so idle time is not<br>
+counted as screen time. It records <em>that</em> you were idle, never what you typed.</li>
+<li><strong>What you create in the app</strong> ΓÇö focus sessions and the intentions you type for them, tasks,<br>
+goals, limits, blocklists, schedules, projects with their clients and hourly rates, manual<br>
+time entries, profiles, the categories and rules you set, and your settings.</li>
+</ul>
+<p>That is the complete list.</p>
+<h2>What Daybook never records</h2>
+<ul>
+<li><strong>Keystrokes.</strong> Daybook uses Windows' idle timer, which reports only <em>how long ago</em> the last<br>
+input happened. It cannot see what you type and does not try.</li>
+<li><strong>Screenshots or screen contents.</strong></li>
+<li><strong>Page contents, form fields, passwords, messages or documents.</strong></li>
+<li><strong>Full web addresses.</strong> Only the host.</li>
+<li><strong>Audio.</strong> Daybook checks <em>whether</em> the microphone is in use, so it can stay quiet during a<br>
+call. It never opens, records or listens to it.</li>
+<li><strong>Your location, contacts, files, camera, or anything on your network.</strong></li>
+</ul>
+<h2>Where it is stored</h2>
+<p>Everything sits in a single SQLite database and a log file under:</p>
+<pre class="notranslate"><code class="notranslate">%LOCALAPPDATA%\Daybook
+</code></pre>
+<p>It is not encrypted, because it never leaves your machine and is protected by your Windows<br>
+user account like the rest of your profile. Anyone with administrative access to your PC could<br>
+read it, exactly as they could read your documents.</p>
+<h2>What you can do with it</h2>
+<ul>
+<li><strong>Export</strong> everything to CSV or JSON from <strong>Reports</strong>, at any time. Exports, timesheets and<br>
+backups are written to <strong>Documents\Daybook</strong>, because they are your files rather than the<br>
+app's own state. If your Documents folder is synced ΓÇö to OneDrive, for instance ΓÇö anything<br>
+you export will sync with it. Backups are encrypted with your passphrase; CSV and JSON<br>
+exports are not, so treat them the way you would any other document containing your history.</li>
+<li><strong>Delete</strong> everything from <strong>Settings ΓåÆ Your data</strong>, without uninstalling.</li>
+<li><strong>Uninstall</strong> ΓÇö Windows removes the app's own folder and everything in it. No residue, no<br>
+server-side copy, because there was never a server-side copy. Files you exported or backed<br>
+up to Documents are deliberately left alone: deleting things you chose to save is not<br>
+something an uninstaller should do on your behalf.</li>
+</ul>
+<h2>Permissions Daybook asks Windows for</h2>
+<ul>
+<li><strong><code class="notranslate">runFullTrust</code></strong> ΓÇö required to read which window is in the foreground. This is the<br>
+capability the entire app is built on. Nothing broader is declared.</li>
+<li><strong><code class="notranslate">startupTask</code></strong> ΓÇö only if you switch on "Start Daybook when I sign in". It is off by<br>
+default, and Windows gives you its own separate toggle for it in Settings ΓåÆ Apps ΓåÆ Startup.</li>
+</ul>
+<h2>Purchases</h2>
+<p>Daybook is a one-time purchase made <strong>entirely through the Microsoft Store</strong>, after a free<br>
+trial that the Store itself runs. When Daybook starts, it asks the Store whether this copy is in<br>
+its trial or has been bought - that answer is the only thing it receives, and nothing about your<br>
+activity is sent with the question. Microsoft handles the payment; Daybook never sees, receives<br>
+or stores your card, billing address or any other payment information. Microsoft's own privacy statement covers that transaction:<br>
+<a href="https://privacy.microsoft.com/privacystatement" rel="nofollow">https://privacy.microsoft.com/privacystatement</a>.</p>
+<h2>Children</h2>
+<p>Daybook is not directed at children and collects nothing that could identify anyone, of any<br>
+age.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy ever changes, the "last updated" date above changes with it, the new version<br>
+ships with the app update that makes the change, and the copy published online is updated at the<br>
+same time. Since Daybook has no server, there is no way<br>
+for the terms to change quietly underneath you.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: <strong><a href="mailto:orrebhaskar77@gmail.com">orrebhaskar77@gmail.com</a></strong></p>
+</main>
+</body>
+</html>
